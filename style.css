@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Antro-Vectra;
+  src: url(assets/font/antro_vectra/Antro-Vectra.otf);
+}
+
+@font-face {
+  font-family: Antro-Vectra;
+  src: url(assets/font/antro_vectra/Antro-Vectra-Bolder.otf);
+  font-weight: bold;
+}
+
+:root {
+  /* Font */
+  --name: Antro-Vectra;
+  --heading-font: "Lora", serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --regular-font: "Montserrat", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+
+  --font-size-sm: clamp(0.8rem, 0.15vw + 0.77rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.31vw + 0.94rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.55vw + 1.14rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 0.91vw + 1.38rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.43vw + 1.67rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.18vw + 2.01rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.24vw + 2.4rem, 5rem);
+
+  /* Colors */
+  --primary-color: black;
+  --secondary-color: white;
+  --accent: #4285f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: var(--regular-font);
+}
+
+nav {
+  font-family: var(--heading-font);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 50rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  flex-shrink: 1;
+  border-radius: 1.875rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button-active {
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 5rem;
+  background-color: var(--accent);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.hero {
+  width: 50rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1.875rem;
+  height: 40vh;
+  text-align: center;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+
+.hero-name {
+  font-family: var(--name);
+  font-size: var(--font-size-xxxl);
+  margin: 0px;
+}
+
+.skills {
+  display: flex;
+  width: 50rem;
+  justify-content: space-between;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.skills-individual-container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+  width: 8.5rem;
+  height: 10rem;
+  flex-shrink: 0;
+}
+
+.works-button-active,
+.works-button {
+  font-family: var(--heading-font);
+  padding: 0.5rem 1.3rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1.875rem;
+}
+
+.works-button-active {
+  background-color: var(--accent);
+}
+
+.project-container {
+  display: flex;
+}
+
+.project-individual-container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 0.5rem;
+}
