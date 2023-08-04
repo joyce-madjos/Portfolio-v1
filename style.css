@@ -40,17 +40,27 @@
 body {
   margin: 0px;
   padding: 0px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-family: var(--regular-font);
+}
+
+nav,
+.hero {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+nav,
+.hero,
+.project-container,
+.skills {
+  width: 50rem;
+  margin: 1rem;
 }
 
 nav {
   font-family: var(--heading-font);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  width: 50rem;
   padding: 0.5rem;
-  margin: 1rem;
   flex-shrink: 1;
   border-radius: 1.875rem;
   display: flex;
@@ -69,11 +79,8 @@ nav {
 }
 
 .hero {
-  width: 50rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   border-radius: 1.875rem;
-  height: 40vh;
+  min-height: 40vh;
   text-align: center;
   margin: 2rem 1rem;
   padding: 1rem;
@@ -87,10 +94,8 @@ nav {
 
 .skills {
   display: flex;
-  width: 50rem;
   justify-content: space-between;
   border: 1px solid black;
-  margin: 1rem;
 }
 
 .skills-individual-container {
