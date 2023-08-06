@@ -243,14 +243,24 @@ fieldset {
 }
 
 .form-inline > input {
+  font-family: var(--regular-font);
   width: 100%;
   display: block;
   padding: 0.8rem;
+  border-radius: 0.5rem;
+  /* font-weight: 300; */
+}
+
+.form-inline > label > span {
+  color: rgb(214, 100, 100);
 }
 
 textarea {
+  font-family: var(--regular-font);
   max-width: 320px;
   min-width: 320px;
+  border-radius: 0.2rem;
+  font-size: 13px;
 }
 
 .links {
@@ -268,12 +278,8 @@ textarea {
   color: var(--accent);
 }
 
-.form-inline > label > span {
-  color: red;
-}
-
 fieldset > button {
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   width: 100%;
   font-family: var(--regular-font);
   background-color: var(--accent);
@@ -283,8 +289,12 @@ fieldset > button {
   /* box-shadow: none; */
 }
 
+button {
+  border-style: none;
+}
+
 footer {
-  padding: 0.6rem;
+  padding: 0.1rem;
   border-radius: 1rem;
   text-align: center;
 }
