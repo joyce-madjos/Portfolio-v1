@@ -49,7 +49,9 @@ nav,
 .skills-individual-container,
 .works-button,
 .project-individual-container,
-.case-individual-container {
+.case-individual-container,
+.get-in-touch-container,
+footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -179,7 +181,7 @@ nav {
 }
 
 .project-image {
-  width: 300px;
+  max-width: 320px;
   height: auto;
 }
 
@@ -221,4 +223,53 @@ nav {
 
 .case-subtitle {
   font-size: var(--font-size-sm);
+}
+
+.get-in-touch-container {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset {
+  padding: 2rem;
+  width: 20rem;
+  border: 1px solid pink;
+}
+
+fieldset > button {
+  /* padding: 0.5rem 2rem; */
+  width: 100%;
+}
+
+.form-inline {
+  margin: 1rem 0;
+}
+
+.form-inline > input {
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+}
+
+textarea {
+  max-width: 320px;
+  min-width: 320px;
+}
+
+.message-me,
+.links {
+  margin: 0;
+}
+
+footer {
+  padding: 0.6rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+  color: var(--accent);
 }
