@@ -46,6 +46,7 @@ body {
 
 nav,
 .hero,
+.education-container,
 .skills-individual-container,
 .works-button,
 .project-individual-container,
@@ -114,6 +115,31 @@ nav {
   margin: 0px;
 }
 
+.education-container {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.school-logo > img {
+  width: 50px;
+  height: auto;
+}
+
+.school-description {
+  font-family: var(--heading-font);
+  margin-left: 1rem;
+}
+
+.school-description > h3 {
+  margin: 0;
+}
+
+.school-description > p {
+  margin: 0;
+}
+
 .skills {
   display: flex;
   justify-content: space-between;
@@ -130,7 +156,6 @@ nav {
 
 .skill-circle-container {
   margin-top: 1rem;
-  /* border: 1px solid white; */
 }
 
 .skill-circle {
