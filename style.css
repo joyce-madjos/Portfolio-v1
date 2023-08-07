@@ -140,6 +140,52 @@ nav {
   margin: 0;
 }
 
+.experience-container {
+  display: flex;
+  padding: 1rem;
+  color: var(--secondary-color);
+  background-color: gray;
+}
+
+.experience-title-container {
+  /* background-color: pink; */
+  width: 15ch;
+}
+
+.experience-title-active {
+  background-color: var(--primary-color);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 1rem 0 1rem 1rem;
+  font-size: var(--font-size-base);
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.experience-title {
+  background-color: var(--primary-color);
+  /* border: 1px solid white; */
+  padding: 1rem 0 1rem 1rem;
+  font-size: var(--font-size-sm);
+  margin-bottom: 2rem;
+  /* text-align: right; */
+}
+
+.experience-description {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  flex-grow: 1;
+}
+
+.experience-description > .experience-title-active {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0.5rem;
+  width: 15ch;
+  border-right: 1px solid white;
+}
+
 .skills {
   display: flex;
   justify-content: space-between;
