@@ -40,7 +40,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  /* margin: 0 auto; */
   font-family: var(--regular-font);
 }
 
@@ -232,7 +231,6 @@ nav {
 }
 
 .skill-title-container {
-  /* border: 1px solid pink; */
   width: 100%;
   padding-left: 0.8rem;
 }
@@ -267,6 +265,17 @@ nav {
 .project-image {
   max-width: 320px;
   height: auto;
+}
+
+.medgrocer {
+  height: 250px;
+  text-align: center;
+}
+
+.medgrocer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-title,
