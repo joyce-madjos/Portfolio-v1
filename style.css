@@ -144,6 +144,27 @@ nav {
 }
 
 .experience-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.experience-title {
+  background-color: var(--accent);
+}
+
+.experience-title-card {
+  display: flex;
+  border: 1px solid white;
+}
+
+.experience-description {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.company > img {
+  width: 50px;
+  height: auto;
 }
 
 .skills {
@@ -204,13 +225,14 @@ nav {
 
 .project-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .project-individual-container {
   border-radius: 0.5rem;
-  flex: 0 1 320px;
+  flex: 0 1 20rem;
 }
 
 .project-image {
@@ -264,6 +286,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.message-me,
+.links {
+  flex: 1;
 }
 
 fieldset {
@@ -299,7 +327,7 @@ textarea {
 
 .links {
   padding-left: 3rem;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .links > a {
