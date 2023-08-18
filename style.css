@@ -61,16 +61,19 @@ nav,
 main,
 .hero,
 .skills,
+.project-container,
+.case-individual-container,
+.get-in-touch-container,
 footer {
   width: min(50rem, 100%);
   margin: 1rem auto;
 }
 
-.project-container,
+/* .project-container,
 .case-individual-container {
   width: 50rem;
   margin: 1rem 0;
-}
+} */
 
 nav {
   font-family: var(--heading-font);
@@ -201,12 +204,14 @@ nav {
 
 .project-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .project-individual-container {
   border-radius: 0.5rem;
-  width: 320px;
+  flex: 0 1 320px;
 }
 
 .project-image {
