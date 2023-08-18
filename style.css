@@ -59,14 +59,14 @@ footer {
 
 nav,
 main,
+.hero,
+.skills,
 footer {
+  width: min(50rem, 100%);
   margin: 1rem auto;
-  width: 50rem;
 }
 
-.hero,
 .project-container,
-.skills,
 .case-individual-container {
   width: 50rem;
   margin: 1rem 0px;
@@ -146,11 +146,13 @@ nav {
 .skills {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skills-individual-container {
+  flex: 0 1 8.5rem;
   border-radius: 0.5rem;
-  width: 8.5rem;
+  /* width: 8.5rem; */
   height: 11.5rem;
   display: flex;
   flex-direction: column;
