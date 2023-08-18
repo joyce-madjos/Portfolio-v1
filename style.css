@@ -69,12 +69,6 @@ footer {
   margin: 1rem auto;
 }
 
-/* .project-container,
-.case-individual-container {
-  width: 50rem;
-  margin: 1rem 0;
-} */
-
 nav {
   font-family: var(--heading-font);
   padding: 0.5rem;
@@ -97,7 +91,6 @@ nav {
   border-radius: 1rem;
   padding: 0.5rem 1.3rem;
   background-color: var(--accent);
-  /* flex-shrink: 0; */
   text-align: center;
 }
 
@@ -153,7 +146,6 @@ nav {
   background-color: var(--accent);
   color: var(--secondary-color);
   display: flex;
-  /* justify-content: center; */
   padding: 1rem;
   border-radius: 1rem 0 0 1rem;
 }
@@ -335,7 +327,6 @@ nav {
 fieldset {
   padding: 2rem;
   width: 20rem;
-  /* border: 1px solid pink; */
 }
 
 .form-inline {
@@ -348,7 +339,6 @@ fieldset {
   display: block;
   padding: 0.8rem;
   border-radius: 0.5rem;
-  /* font-weight: 300; */
 }
 
 .form-inline > label > span {
@@ -365,7 +355,6 @@ textarea {
 
 .links {
   padding-left: 3rem;
-  /* width: 100%; */
 }
 
 .links > a {
@@ -386,7 +375,6 @@ fieldset > button {
   color: var(--secondary-color);
   border-radius: 1rem;
   cursor: pointer;
-  /* box-shadow: none; */
 }
 
 button {
@@ -405,7 +393,7 @@ footer > p > a {
 }
 @media screen and (max-width: 768px) {
   .experience-container {
-    flex-direction: column; /* Set the flex direction to column for phones */
+    flex-direction: column;
   }
   .experience-title,
   .experience-description {
